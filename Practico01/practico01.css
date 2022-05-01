@@ -1,0 +1,98 @@
+body{
+    padding: 0;
+    margin: 0px;
+    background-color: grey;
+}
+header{
+    padding: 5px;
+    margin: 5px 5px 0px 5px;
+}
+.top_0{
+    list-style: none;
+    background-color: cadetblue;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 10px
+}
+.itemsMenu{
+    width: 10%;
+    display: inline-block;
+/*
+    text-align: center;
+    border: 1px solid;
+*/
+    font-size: 16px;
+    font-weight: bold;
+    font-family:'Arial Narrow', sans-serif;
+    transform:scaleY(1.2);
+    min-width: 100px;
+}
+.itemsMenu:hover{
+    color: azure;
+}
+.itemsMenuDer{
+    width: 60%;
+    display: inline-block;
+    text-align:right;
+}
+.boton0{
+    background-color:darkslategrey;
+    color: white;
+    width: 50px;
+    height: 25px;
+    border-width:0px;
+}
+.txtBuscar{
+    height: 25px;
+}
+main{
+    display: flex;
+    margin: 0px 5px 5px 5px;
+}
+#derecha{
+    background-color: white;
+    width: 80%;
+    padding: 5px;
+    margin: 5px;
+}
+#izquierda{
+    background-color: cadetblue;
+    width: 20%;
+    padding: 5px;
+    margin: 5px;
+    min-width: 200px;
+}
+h1{
+    font-family:cursive;
+    text-align: center;
+    font-size: 40px;
+}
+p{
+    font-family:'Arial Narrow', sans-serif;
+    transform:scaleY(1.2);
+    text-align: justify;
+    padding: 10px;
+    font-size: 16px;
+}
+h2{
+    font-family: cursive;
+    text-align: left;
+    font-size: 28px;
+}
+.alt_izq{
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-family:'Arial Narrow', sans-serif;
+    transform:scaleY(1.2);
+    font-size: 18px;
+}
+footer{
+    height: 50px;
+    padding: 10px;
+    margin: 0px 10px 10px 10px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
