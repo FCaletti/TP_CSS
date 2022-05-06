@@ -1,0 +1,101 @@
+header{
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: space-between;
+}
+#logo{
+    width: 100px;
+    border-radius: 50%;
+    margin: 10px;
+}
+nav{
+    list-style: none;
+    padding: 5px;
+    margin-top: 10px;
+}
+li{
+    display: inline-block;
+    margin: 5px;
+    font-size: 1.1rem;
+}
+a{
+color: darkblue;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 3rem;
+}
+#topIzq{
+    width: 10%;
+    min-width: 120px;
+    text-align: center;
+}
+#topCen{
+    width: 80%;
+    min-width: 300px;
+    text-align: center;
+}
+#topDer{
+    width: 10%;
+    min-width: 340px;
+    text-align: right;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px 40px 0 40px;
+}
+.tarjeta{
+    display: inline-block;
+    border: 1px solid;
+    width: 22%;
+    min-width: 200px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tarjetaImg{
+    border-radius: 5%;
+    margin: 10px;
+    max-width: 150px;
+}
+.tarjetaTit{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 10px 20px 10px 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    display: flex;
+    justify-content: left;
+    width: 90%;
+}
+.tarjetaTxt{
+    font-size: 1.2rem;
+    margin: 10px 20px 10px 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+.tarjetaPie{
+    width: 50%;
+    background-color: darkcyan;
+    height: 40px;
+    color: aliceblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    background-color: cornflowerblue;
+    display:flex ;
+    align-items: center;
+    height: 60px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+.loguito{
+    width: 40px;
+    margin: 10px;
+}
