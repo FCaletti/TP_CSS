@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'iconos';
+    src: url('./SVG/menu.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "iconos";
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-mail:before { content: '\e800'; } /* '' */
+.icon-cog:before { content: '\e801'; } /* '' */
+.icon-music:before { content: '\e802'; } /* '' */
+.icon-facebook:before { content: '\e803'; } /* '' */
+.icon-heart:before { content: '\e804'; } /* '' */
+.icon-heart-empty:before { content: '\e805'; } /* '' */
+.icon-instagram:before { content: '\e806'; } /* '' */
+.icon-pinterest:before { content: '\e807'; } /* '' */
+.icon-spotify:before { content: '\e808'; } /* '' */
+.icon-twitter-1:before { content: '\e809'; } /* '' */
+.icon-user:before { content: '\e80a'; } /* '' */
+.icon-whatsapp:before { content: '\e80b'; } /* '' */
+.icon-youtube:before { content: '\e80c'; } /* '' */
+.icon-send:before { content: '\f1d9'; } /* '' */
+.icon-snapchat:before { content: '\f2ac'; } /* '' */
+.icon-twitter:before { content: '\f302'; } /* '' */
