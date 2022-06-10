@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'reproductor';
+  src: url('./SVG/reproductor.ttf') format('truetype');
+  weight: normal;
+  font-style: normal;
+}
+
+[class^="ic-"]:before, [class*=" ic-"]:before {
+  font-family: "reproductor";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.ic-play:before { content: '\e86a'; } /* '' */
+.ic-stop:before { content: '\e86c'; } /* '' */
+.ic-pause:before { content: '\e86d'; } /* '' */
+.ic-to-end:before { content: '\e86e'; } /* '' */
+.ic-to-end-alt:before { content: '\e86f'; } /* '' */
+.ic-to-start:before { content: '\e870'; } /* '' */
+.ic-to-start-alt:before { content: '\e871'; } /* '' */
+.ic-fast-fw:before { content: '\e872'; } /* '' */
+.ic-fast-bw:before { content: '\e873'; } /* '' */
+.ic-eject:before { content: '\e874'; } /* '' */

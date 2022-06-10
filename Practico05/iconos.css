@@ -28,12 +28,15 @@
 .icon-heart:before { content: '\e804'; } /* '' */
 .icon-heart-empty:before { content: '\e805'; } /* '' */
 .icon-instagram:before { content: '\e806'; } /* '' */
+.icon-instagram:hover { color:blue; } /* '' */
 .icon-pinterest:before { content: '\e807'; } /* '' */
 .icon-spotify:before { content: '\e808'; } /* '' */
+.icon-spotify:hover { color: green; } /* '' */
 .icon-twitter-1:before { content: '\e809'; } /* '' */
 .icon-user:before { content: '\e80a'; } /* '' */
 .icon-whatsapp:before { content: '\e80b'; } /* '' */
 .icon-youtube:before { content: '\e80c'; } /* '' */
+.icon-youtube:hover { color:red; } /* '' */
 .icon-send:before { content: '\f1d9'; } /* '' */
 .icon-snapchat:before { content: '\f2ac'; } /* '' */
 .icon-twitter:before { content: '\f302'; } /* '' */

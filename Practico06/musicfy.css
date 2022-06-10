@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'Spotify';
+    src: url('./img/Spotify.SVG') format('SVG');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Bauhaus93;
+    src: url("./font/BAUHS93.TTF");
+}
+@font-face {
+    font-family: Cooper;
+    src: url("./font/COOPBL.TTF");
+}
+@font-face {
+    font-family: Gabriola;
+    src: url("./font/Gabriola.ttf");
+}
+
+body {
+    background-color:white ;
+}
+header{
+    display:inline-flex;
+    background-color: white;
+    grid-area:header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+    display:inline-flex;
+    align-content: center   ;
+    justify-content: center;
+}
+@media only screen and (min-width: 1600px) {
+    /* body {
+        background-color:lightskyblue ;
+    } */
+    .grillaX{
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(70px, 15vh) 65vh 10vh ;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width:1599px) {
+    .grillaX{
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(70px, 15vh) 75vh 10vh ;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+}
+@media only screen and (min-width: 768px) and (max-width:1199px) {
+    .grillaX{
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(70px, 15vh) 6fr 10vh ;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+}
+@media only screen and (min-width: 320px) and (max-width:767px) {
+    .grillaX{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "main"
+        "footer";
+    }
+    .header {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 200px) and (max-width:319px) {
+    .grillaX{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "main"
+        "footer";
+    }
+    .header {
+        display: none;
+    }
+}
+
+.grillaX{
+    margin: auto;
+    height: 85%;
+    width: 85%;
+    display: grid;
+    border: 1px, solid, black;
+}
+
+
+.border{
+    text-align: center;
+    align-items: center;
+    border: 1px solid black;
+}
+#logoM{
+    height: 14vh;
+    min-height: 50px;
+    width: auto;
+}
+.Titulo{
+    width: 100%;
+    font-family: Cooper;
+    font-size: calc(15px + 5.1vw);
+    text-align: center;
+    color: darkkhaki;
+    -webkit-text-stroke: 2px black;
+    margin-bottom: 15px;
+}
+.Titulo2{
+    width: 100%;
+    height: 4rem;
+    font-family: Cooper;
+    font-size: calc(40px + 1.5vw);
+    line-height: 3.5rem;
+    text-align: center;
+    font-variant:small-caps;
+}
+
+
+.contenedor{
+    display: grid;
+    width: 98%;
+    height: 90%;
+    margin: 10px auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 19vw));
+    grid-auto-rows: 400px;
+    grid-row-gap: 25px;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+.celda{
+    background-color:whitesmoke;
+    text-align: center;
+    border-radius: 4px;
+    min-width: 17vw;
+    max-width: 300px;
+    width: 100%;
+    height: 55vh;
+    border: 1px solid black;
+    box-shadow: -4px 4px 10px gray;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: minmax(50px, 1fr) minmax(200px, 2fr) minmax(3.5rem, 4rem) minmax(50px, .5fr) minmax(28px, .3fr);
+}
+.topTarjeta{
+    display:inline-flexbox;
+    flex-direction: row;
+    justify-content: center;
+}
+.tapaAlbum{
+    text-decoration: none;
+}
+.coverAlbum{
+    margin: 5px auto;
+    width: auto;
+    height: auto;
+    max-width: 95%;
+    max-height: 95%;
+
+    border-top: 1px solid gray;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid lightgray;    
+}
+.nombreAlbum{
+    font-family: Bauhaus93;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+.anioAlbum{
+    font-family: Gabriola;
+    font-size: 3rem;
+    line-height: 3.5rem;
+}
+.pieTarjeta{
+    display: flex;
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.CajaPie{
+    width: 30%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-content: top;
+    justify-content: space-around;
+}
+.iconoRep{
+    align-items: center;
+    color: black;
+    width: 1.6em;
+    font-size: 1.6em;
+    height: 1.3em;
+    margin: auto;
+}

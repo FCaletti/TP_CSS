@@ -18,6 +18,9 @@
     src: url("./font/Gabriola.ttf");
 }
 
+body {
+    background-color:white ;
+}
 header{
     display:inline-flex;
     background-color: white;
@@ -29,6 +32,7 @@ header{
     flex-direction: row;
     justify-content: flex-end;
     grid-area: naveg;
+    background-color: black;
 }
 .hambur{
     display: flex;
@@ -44,14 +48,17 @@ sidebar{
 }
 aside{
     grid-area: ads;
+    margin-top: 25px;
+    justify-items: center;
 }
 footer{
     grid-area: footer;
+    margin-top: 25px;
 }
 @media only screen and (min-width: 1600px) {
-    body {
+    /* body {
         background-color:lightskyblue ;
-    }
+    } */
     .grillaX{
         grid-template-columns: 1.5fr 7.5fr 1fr;
         grid-template-areas: 
@@ -68,9 +75,9 @@ footer{
     }
 }
 @media only screen and (min-width: 1200px) and (max-width:1599px) {
-    body {
+    /* body {
         background-color:burlywood ;
-    }
+    } */
     .grillaX{
         grid-template-columns: minmax(210px, 1.5fr) 7.5fr 1fr;
         grid-template-areas: 
@@ -87,9 +94,9 @@ footer{
     }
 }
 @media only screen and (min-width: 768px) and (max-width:1199px) {
-    body {
+    /* body {
         background-color:cornflowerblue ;
-    }
+    } */
     .grillaX{
         border: 1px solid black;
         grid-template-columns: 2fr 6fr;
@@ -113,9 +120,9 @@ footer{
     }
 }
 @media only screen and (min-width: 320px) and (max-width:767px) {
-    body {
+    /* body {
         background-color:gray ;
-    }
+    } */
     .grillaX{
         border: 1px solid black;
         grid-template-columns: 1fr;
@@ -141,9 +148,9 @@ footer{
 
 
 @media only screen and (min-width: 200px) and (max-width:319px) {
-    body {
+    /* body {
         background-color:aquamarine ;
-    }
+    } */
     .grillaX{
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -176,8 +183,6 @@ footer{
 
 
 .border{
-    border: 1px solid darkgreen;
-    border-radius: 10px;
     text-align: center;
     align-items: center;
 }
@@ -214,16 +219,13 @@ footer{
 .itemMenu{
     width: 10rem;
     height: 90%;
-    border: 1px solid black;
-    border-radius: 5px;
     line-height: 2.2rem;
-    background-color: blanchedalmond;
-    color: darkgreen;
+    background-color: transparent;
+    color: blanchedalmond;
     text-decoration: none;
 }
 .itemMenu:hover{
-    background-color: darkgreen;
-    color: blanchedalmond;
+    text-decoration: underline;
 }
 .itemMenu a{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -283,16 +285,15 @@ footer{
     margin: 0;
     padding: 10px;
     width: 200px;
-        list-style: none;
+    list-style: none;
     border-bottom: 1px solid black;
-    background-color: blanchedalmond;
-    color: darkgreen;
+    background-color:rgba(11, 11, 11, 0.8);
+    color: blanchedalmond;
     text-decoration: none;
 }
 /*Estilo cuando el mouse pasa encima de cada link del menu*/
 .itemMenuH:hover {
-    background-color: darkgreen;
-    color: blanchedalmond;
+    text-decoration: underline;
 }
 .itemMenuH a{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -312,14 +313,13 @@ footer{
     margin: 0;
     padding: 10px;
     list-style: none;
-    background-color: blanchedalmond;
-    color: darkgreen;
+    background-color:rgba(11, 11, 11, 0.8);
+    color: blanchedalmond;
     text-decoration: none;
     text-align: right;
 }
 .itemMenuH2:hover {
-    background-color: darkgreen;
-    color: blanchedalmond;
+    text-decoration: underline;
 }
 .itemMenuH2 a{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -339,14 +339,15 @@ footer{
     grid-row-gap: 25px;
 }
 .celda{
-    background-color: lightskyblue;
+    background-color:whitesmoke;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 4px;
     min-width: 17vw;
     max-width: 300px;
     width: 100%;
     height: 100%;
     border: 1px solid black;
+    box-shadow: -4px 4px 10px gray;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: minmax(26px, .2fr) minmax(200px, 2fr) minmax(3.5rem, 4rem) minmax(50px, .5fr) minmax(28px, .3fr);
@@ -365,6 +366,11 @@ footer{
     height: auto;
     max-width: 95%;
     max-height: 95%;
+
+    border-top: 1px solid gray;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid lightgray;    
 }
 .nombreAlbum{
     font-family: Bauhaus93;
@@ -390,7 +396,6 @@ footer{
     text-align: center;
 }
 .MenuLateral ul{
-    list-style-type: none;
     padding-left: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: calc(10px + .5vw);
@@ -398,7 +403,22 @@ footer{
     line-height: 50px;
 }
 .MenuLateral li{
+    list-style: none;
+    width: 90%;
+}
+.linkLat{
+    color: black;
     border: 1px solid black;
     border-radius: 5px;
-    width: 90%;
+}
+.linkLat a{
+    text-decoration: none;
+    color: inherit;
+}
+.linkLat:hover{
+    text-decoration: underline;
+}
+.ImgAside{
+    width: 15vh;
+    height: auto;
 }
